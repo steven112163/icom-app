@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1552196275100
+Build-Jdk: 1.8.0_201
+Built-By: user
+Bundle-Description: ONOS OSGi bundle archetype
+Bundle-ManifestVersion: 2
+Bundle-Name: icom-app
+Bundle-SymbolicName: org.icom.app
+Bundle-Version: 1.14.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.icom.app;uses:="org.onosproject.core,org.onosproject
+ .net.flow,org.onosproject.net.flowobjective,org.onosproject.net.host,or
+ g.onosproject.net.packet,org.onosproject.net.topology";version="1.14.0"
+Import-Package: org.onlab.packet;version="[1.14,2)",org.onosproject.core
+ ;version="[1.14,2)",org.onosproject.net;version="[1.14,2)",org.onosproj
+ ect.net.flow;version="[1.14,2)",org.onosproject.net.flowobjective;versi
+ on="[1.14,2)",org.onosproject.net.host;version="[1.14,2)",org.onosproje
+ ct.net.packet;version="[1.14,2)",org.onosproject.net.topology;version="
+ [1.14,2)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.icom.app.Communication.xml
+Tool: Bnd-3.3.0.201609221906
